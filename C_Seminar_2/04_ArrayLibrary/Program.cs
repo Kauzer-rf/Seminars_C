@@ -26,7 +26,7 @@ int Index3(int[] col1, int find)
 {
     int count = col1.Length;
     int index = 0;
-    int position = 0;
+    int position = -1;
     while (index < count)
     {
         if (col1[index] == find)
