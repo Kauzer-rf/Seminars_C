@@ -17,12 +17,32 @@ void PrintArray(int[] col2)
     int index2 = 0;
     while (index2 < lenght2)
     {
-        Console.WriteLine(col2[index2]);
+        Console.Write(col2[index2] + " ");
         index2++;
     }
 }
 
+int Index3(int[] col1, int find)
+{
+    int count = col1.Length;
+    int index = 0;
+    int position = 0;
+    while (index < count)
+    {
+        if (col1[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
 int[] array = new int[10];
 
 FillArray(array);
 PrintArray(array);
+
+Console.WriteLine();
+int pos = Index3(array, 4);
+Console.WriteLine(pos);
