@@ -10,7 +10,7 @@ Console.WriteLine("Random number: " + num);
 int firstDigit = num / 10;
 int secondDigit = num % 10;
 
-Console.WriteLine("Result " + getMax(firstDigit, secondDigit));
+Console.WriteLine("Max number: " + getMax(firstDigit, secondDigit));
 
 int getMax(int a, int b)
 {
