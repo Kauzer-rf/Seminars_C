@@ -7,7 +7,7 @@
 Console.Write("Enter bumber: ");
 int num = int.Parse(Console.ReadLine());
 
-if (num % 7 == 0 & num % 23 == 0)
+if (num % 7 == 0 && num % 23 == 0)
 {
     Console.WriteLine("Число " + num + " кратно и 7, и 23.");
 }
