@@ -8,9 +8,7 @@ int xIn = int.Parse(Console.ReadLine());
 Console.Write("Введите Y: ");
 int yIn = int.Parse(Console.ReadLine());
 
-int res = getQuarter(xIn, yIn);
-Console.WriteLine("Номер квадрата: " + res);
-
+Console.WriteLine("Номер квадрата: " + getQuarter(xIn, yIn));
 
 int getQuarter(int x, int y)
 {
