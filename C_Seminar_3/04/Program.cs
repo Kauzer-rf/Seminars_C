@@ -12,7 +12,7 @@ int x2 = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите Y2:");
 int y2 = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Otvet: " + getLength(x1,y1,x2,y2));
+Console.WriteLine("Otvet: " + Math.Floor(getLength(x1,y1,x2,y2)));
 
 double getLength(int x1, int y1, int x2, int y2)
 {
