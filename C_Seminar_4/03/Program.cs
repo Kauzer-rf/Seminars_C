@@ -7,10 +7,15 @@
 */
 Console.Write("Введите число N: ");
 int n = int.Parse(Console.ReadLine());
-int sum = 1;
 
-for (int i = 1; i <= n; i++)
+Console.WriteLine("Ответ: " + Multiply(n));
+
+int Multiply(int n)
 {
-sum = sum * i;
+    int res = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        res = res * i;
+    }
+    return res;
 }
-Console.WriteLine("Ответ: " + sum);
