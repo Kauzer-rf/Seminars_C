@@ -26,7 +26,7 @@ for (int i = 0; arr.Length > i; i++)
 {
     if (arr[i] >= 10 && arr[i] <= 99)
     {
-        res += 1;
+        res ++;
     }
 }
 Console.WriteLine();
