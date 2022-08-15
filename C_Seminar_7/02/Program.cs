@@ -5,10 +5,7 @@ m = 3, n = 4.
 1 2 3 4
 2 3 4 5
 */
-System.Console.Write("Введите количество срок: ");
-int row = int.Parse(Console.ReadLine());
-System.Console.Write("Введите количество столбцов: ");
-int col = int.Parse(Console.ReadLine());
+
 
 int[,] GetArray(int row, int col)
 {
@@ -29,10 +26,17 @@ void PrintArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            System.Console.Write(array[i, j] + " ");
+            Console.Write(array[i, j] + "\t");
         }
-        System.Console.WriteLine();
+        Console.WriteLine();
     }
 }
 
-PrintArray(GetArray(row, col));
+Console.Write("Введите количество срок и столбцов через пробел: ");
+string[] input = Console.ReadLine().Split();
+int row = int.Parse(input[0]);
+int col = int.Parse(input[1]);
+
+int[,] numbers = GetArray(row,col);
+PrintArray(numbers);
+
